@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #392939;
+    background: #570857;
     color: white;
 }
 
@@ -16,3 +16,42 @@ h1{
     margin: 100px auto 50px;
 }
 
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    background: #ff3929;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: white;
+    font-size: 18px;
+}
