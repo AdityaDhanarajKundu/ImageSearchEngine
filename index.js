@@ -22,6 +22,14 @@ async function searchImages(){
             //creating the image element
             const image = document.createElement("img");
             image.src = result.urls.small;
+
+            //creating the anchor tag to go vist the source webpage
+            const imageLink = document.createElement("a");
+            imageLink.href = result.links.html;
+            imageLink.target = "_blank";
+
+            //putting the image inside the anchor tag
+            imageLink.appendChild(image);
         })
 
     } catch (error) {
