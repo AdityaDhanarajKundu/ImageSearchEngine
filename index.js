@@ -30,6 +30,7 @@ async function searchImages(){
 
             //putting the image inside the anchor tag
             imageLink.appendChild(image);
+            searchResult.appendChild(imageLink);
         })
 
     } catch (error) {
