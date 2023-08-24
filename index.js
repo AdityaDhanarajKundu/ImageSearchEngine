@@ -31,7 +31,9 @@ async function searchImages(){
             //putting the image inside the anchor tag
             imageLink.appendChild(image);
             searchResult.appendChild(imageLink);
-        })
+        });
+
+        showMoreButton.style.display = "block";
 
     } catch (error) {
         console.error(error);
@@ -41,5 +43,10 @@ async function searchImages(){
 searchForm.addEventListener("submit",(event)=>{
     event.preventDefault();
     page = 1;
+    searchImages();
+})
+
+showMoreButton.addEventListener("click",()=>{
+    page++;
     searchImages();
 })
