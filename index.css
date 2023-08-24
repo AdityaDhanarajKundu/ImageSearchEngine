@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #392939;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;
+    margin: 100px auto 50px;
+}
+
