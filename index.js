@@ -9,7 +9,7 @@ let page = 1;
 
 async function searchImages(){
     keyword = searchBox.value;
-    let apiUrl = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${apiKey}`;
+    let apiUrl = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${apiKey}&per_page=12`;
 
     try {
         let data = await fetch(apiUrl).then(respose=>{
