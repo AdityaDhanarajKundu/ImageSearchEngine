@@ -17,6 +17,11 @@ async function searchImages(){
         });
         console.log(data);
 
+        //clearing the previous image results when a new keyword is entered
+        if (page === 1){
+            searchResult.innerHTML="";
+        }
+
         const resultImages = data.results;
         resultImages.map((result)=>{
             //creating the image element
